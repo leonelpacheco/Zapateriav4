@@ -1,0 +1,166 @@
+body{
+	background-color: #676858;
+}
+/**********************seccion de estilos del menu****************************/
+#header{
+	background-color: #FFFFFF !important;
+	height: 150px;
+	/*margin: 0 15px;*/
+}
+#header img{
+	-webkit-box-shadow: -1px -3px 5px 27px rgba(0,0,0,0.12);
+-moz-box-shadow: -1px -3px 5px 27px rgba(0,0,0,0.12);
+box-shadow: -1px -3px 5px 27px rgba(0,0,0,0.12);
+	}
+#logo{
+	margin: 0px !important;
+}
+
+#imgLogo{
+	/*<!--position: absolute;
+	display:block;
+	text-indent:-9999px;-->*/
+	
+	width:100px;
+	height:100px;
+	z-index: 1;
+}
+#cart{
+	width: 100%;
+	height: auto;
+	background-color: white;
+	position: absolute;
+	z-index: 1;
+}
+.categorias>li>ul {
+   display: none;
+   list-style: none outside none;
+}
+.subCategorias>li>ul {
+   display: none ;
+   list-style: none outside none;
+}
+
+.productos>li>ul {
+   display: none ;
+   list-style: none outside none;
+}
+
+.subCategorias{
+	position: absolute ;
+	left: 100% ;
+	list-style: none outside none;
+	padding: 3px 0;
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.subCategorias>li>a{
+	display: block;	
+	clear: both;
+	font-weight: normal;
+	color: #333;
+	padding: 2px 20px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+.subCategorias>li>a:hover{
+	background-color: #F5F5F5;
+}
+
+.productos>li>a:hover{
+	background-color: #F5F5F5;
+}
+.productos{
+	position: absolute ;
+	left: 100%;
+	padding: 3px 0;
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.productos>li>a{
+	display: block;	
+	clear: both;
+	font-weight: normal;
+	color: #333;
+	padding: 2px 20px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.detallesProducto{
+	position: absolute;
+	left: 100%;
+	width: 150px;
+	height: 150px;
+	padding: 3px 0;
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.productos>.detallesProducto{
+	display: none;
+}
+.removeProducto:hover{
+	cursor: pointer;
+}
+/**/
+.fondoWhite{
+	background-color: #fff;
+}
+
+/**********************seccion de estilos del catalogo****************************/
+
+#categorias>ul>li>.right{
+	display: inline-block;
+	float: right;
+}
+
+
+/*+++++++++estilos para confirmacion del pago+++++++++*/
+.blockIcon{
+	display: block;
+	position: relative;
+	top: -25px;
+	left: 75%;
+	width: 0px;
+}
+.blockIcon:hover{
+	cursor: pointer;
+}
+
+.grisClaro{
+	background-color: #F5F5F5;
+	min-height: 500px;
+}
+
+.bg-danger{
+	background-color: #f2dede;
+}
+.bg-success{
+	background-color: #dff0d8;
+}
+
+.noMargin{
+	margin: 0px !important;
+}
+
+.padding15px{
+	padding: 15px;
+}
+
+.rigth{
+	float: right;
+}
+
+.editParamsPago{
+	font-size: 0.5em;
+}
+.boxFix100p{
+	width: 100%;
+	overflow: hidden;
+}
+.navbar-form.navbar-right:last-child.busqueda{
+	margin-right: 0px;
+}

@@ -1,0 +1,6 @@
+#pedido_productos span:hover{
+	cursor: pointer;
+}
+.hide{
+	display: none;
+}

@@ -1,0 +1,55 @@
+#carrusel{
+	white-space: nowrap;
+	position: relative;
+}
+
+.carrusel-box{
+    display: inline-block;
+	width: 150px;
+}
+
+.carrusel-white-space{
+	white-space: normal;
+}
+
+.carrusel-wrap{
+	overflow: hidden;
+	/*border: 1px solid #DDD;*/
+	border-radius: 4px;
+	padding: 4px;
+	margin: 5px;
+	
+}
+.next{
+	font-size: 1.5em;
+	color: #084A8F;
+	height: 20px;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	z-index: 1;
+}
+.before{
+	font-size: 1.5em;
+	color: #084A8F;
+	height: 20px;
+	left: 0px;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	
+}
+.icon-arrow-right, .icon-arrow-left:hover{
+	cursor: pointer;
+}
+@media only screen and (max-width:400px) {
+	.carrusel-wrap{
+		
+	}
+}
+#this-carousel-id .active{
+}
+
+.carousel-inner{
+z-index: -0;
+}

@@ -1,0 +1,112 @@
+@extends('layout')
+@section ('title')
+Iniciar sesion
+@stop 
+@section ('titulo')
+Iniciar sesion
+@stop
+@section('content')
+
+<div class="main_bg">
+<div class="wrap">
+<div class="main">
+	<div class="login_left">
+		<h3>login</h3>
+<!--		<p>if you have any account with us, please log in.</p>
+-->	<!-- start registration -->
+	<div class="registration">
+		<!-- [if IE] 
+		    < link rel='stylesheet' type='text/css' href='ie.css'/>  
+		 [endif] -->  
+		  
+		<!-- [if lt IE 7]>  
+		    < link rel='stylesheet' type='text/css' href='ie6.css'/>  
+		<! [endif] -->  
+		<script>
+			(function() {
+		
+			// Create input element for testing
+			var inputs = document.createElement('input');
+			
+			// Create the supports object
+			var supports = {};
+			
+			supports.autofocus   = 'autofocus' in inputs;
+			supports.required    = 'required' in inputs;
+			supports.placeholder = 'placeholder' in inputs;
+		
+			// Fallback for autofocus attribute
+			if(!supports.autofocus) {
+				
+			}
+			
+			// Fallback for required attribute
+			if(!supports.required) {
+				
+			}
+		
+			// Fallback for placeholder attribute
+			if(!supports.placeholder) {
+				
+			}
+			
+			// Change text inside send button on submit
+			var send = document.getElementById('register-submit');
+			if(send) {
+				send.onclick = function () {
+					this.innerHTML = '...Sending';
+				}
+			}
+		
+		})();
+		</script>
+	<div class="registration_left">
+		<a href="#"><div class="reg_fb"><img src="images/facebook.png" alt=""><i>Introduzca sus datos</i><div class="clear"></div></div></a>
+		 <div class="registration_form">
+		 <!-- Form -->
+			<form id="log" class="form-horizontal" role="form" method="post" action="{{route('doLoginCliente2')}}">
+				<div>
+					<label>
+						<input type="text" class="form-control required" id="email" name="email" placeholder="Correo Electrónico">
+						{{$errors->first('email')}}
+					</label>
+				</div>
+				<div>
+					<label>
+						<input type="password" class="form-control required" id="password" name="password" placeholder="Contraseña">
+						{{$errors->first('password')}}
+					</label>
+				</div>						
+				<div>
+            
+						
+					<!--input type="submit"  id="login"  class="btn btn-primary" value="Iniciar Sesión"-->
+					<input type="submit"   class="btn btn-primary" value="Iniciar Sesión">
+				</div>
+				<div class="forget">
+				<a id="login" type="" class="" href="{{route('recuperarContrasena')}}">Olvide mi contraseña</a>
+				</div>
+                <div class="forget">
+					<a id="register" href="{{route('registrarCliente')}}" >Registrarme</a>
+				</div>
+			</form>
+			<!-- /Form -->
+		</div>
+	</div>
+	</div>
+	<!-- end registration -->
+	</div>
+	
+	<div class="clear"></div>
+</div>
+</div>
+</div>
+	
+		
+	
+@stop
+@section('css')
+@stop
+@section('js')
+	{{HTML::script('assets/js/scriptJS/scriptLoginCliente.js')}}
+@stop
